@@ -1,0 +1,14 @@
+.landing-container {
+    padding: 60px;
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
+}
+
+.landing img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,57 @@
+.contact {
+    padding: 80px 300px 150px;
+}
+
+@media (max-width: 1220px) {
+    .contact {
+        padding: 80px 150px 150px;
+    }
+}
+
+@media (max-width: 995px) {
+    .contact {
+        padding: 80px 100px 150px;
+    }
+}
+@media (max-width: 790px) {
+    .contact{
+        padding: 80px 50px 150px;
+    }
+}
+@media (max-width: 400px) {
+    .contact{
+        padding: 80px 10px 150px;
+    }
+}
+.contact h1 {
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 20px;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+}
+
+.contact textarea::placeholder {
+    color: var(--first-color);
+
+}
+
+.contact button {
+    color: var(--forth-color);
+    background-color: var(--first-color);
+    padding: 10px 20px;
+    border: 1px solid var(--first-color);
+    border-radius: 50px;
+    float: left;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.contact button:hover {
+    color: var(--first-color);
+    background-color: var(--forth-color);
+}

@@ -1,0 +1,283 @@
+.header {
+    height: 150px;
+    background-color: white;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.lg-nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.lg-nav-links-left {
+    margin-left: 240px;
+}
+
+.lg-nav-links-right li:nth-child(2) {
+    margin-right: 180px;
+}
+
+.logo-container {
+    flex: 1;
+    margin-left: 50px;
+}
+
+@media (max-width: 1400px) {
+    .lg-nav-links-right li:nth-child(2) {
+        margin-right: 110px;
+    }
+}
+
+@media (max-width:1276px) {
+    .lg-nav-links-left {
+        margin-left: 150px;
+    }
+
+    .lg-nav-links-right li:nth-child(2) {
+        margin-right: 100px;
+    }
+
+    .logo-container {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:1067px) {
+    .lg-nav-links-left {
+        margin-left: 100px;
+    }
+
+    .lg-nav-links-right li:nth-child(2) {
+        margin-right: 50px;
+    }
+
+    .logo-container {
+        margin-left: 45px;
+    }
+}
+
+
+.button {
+    cursor: pointer;
+    display: none;
+}
+
+.searchh {
+    cursor: pointer;
+
+}
+
+.nav-links {
+    display: none;
+    gap: 20px;
+    list-style: none;
+    transition: 0.8s;
+}
+
+.nav-links.show {
+    transform: translateX(0);
+}
+
+
+
+@media (max-width: 1000px) {
+    .button {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: var(--second-color);
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 380px;
+        text-align: center;
+        transform: translateX(-100%);
+    }
+
+    .ShoppingBag {
+        margin-top: 10px;
+    }
+
+    .lg-nav-links {
+        display: none;
+    }
+
+    .logo-container {
+        margin-left: -70%;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width:650px) {
+    .logo-container {
+        margin-left: -50%;
+    }
+}
+
+@media (max-width:500px) {
+    .logo-container {
+        margin-left: -40%;
+    }
+}
+
+@media (max-width:450px) {
+    .logo-container {
+        margin-left: -30%;
+    }
+}
+
+@media (max-width:370px) {
+    .logo-container {
+        margin-left: -20%;
+    }
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--first-color);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.line.rotate-left {
+    transform: rotate(-45deg) translateY(4px);
+}
+
+.line.rotate-right {
+    transform: rotate(45deg) translateY(-4px);
+}
+
+.line.fade-out {
+    opacity: 0;
+}
+
+
+.nav svg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.ShoppingBag {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+ul li p {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    top: 70px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--first-color);
+}
+
+.search-input {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -5px;
+    transition: 1s;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: var(--first-color);
+}
+
+.input-off {
+    width: 0px;
+    border-color: white;
+    background-color: white;
+}
+
+.input-onn {
+    width: 200px;
+}
+
+.input-onn:focus {
+    border-color: var(--first-color);
+}
+
+@media (max-width:1276px) {
+    .input-onn {
+        width: 150px;
+    }
+
+    /* .input-onn:focus {
+        width: 300px;
+    } */
+}
+
+@media (max-width:1067px) {
+    .input-onn {
+        width: 100px;
+    }
+}
+
+.search-input::placeholder {
+    color: var(--first-color);
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    outline: none;
+}
+
+.search-input-2 {
+    margin-left: 10px;
+    /* margin-top: -5px; */
+    transition: 1s;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: var(--first-color);
+    width: 90%;
+    left: 5%;
+    background-color: var(--second-color);
+}
+
+@media (min-width:1000px) {
+    .search-input-2 {
+        display: none;
+    }
+}
+
+

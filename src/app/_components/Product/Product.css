@@ -1,0 +1,106 @@
+.featured-products .product div p {
+    color: var(--first-color);
+    background-color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 0.5;
+}
+
+.featured-products .product .prod-name {
+    font-size: 20px;
+    background-color: var(--first-color);
+    width: fit-content;
+    padding: 10px 20px;
+    color: white;
+    float: right;
+    margin: -30px 0 0 190px;
+    position: absolute;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.featured-products .product div p:first-child {
+    margin-top: 10px;
+}
+
+.featured-products .product .prod-name:hover {
+    background-color: var(--second-color);
+}
+
+@media (max-width:1399px) {
+    .featured-products .product .prod-name {
+        margin-left: 150px;
+    }
+
+    .featured-products .product div p:first-child {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1199px) {
+    .featured-products .product .prod-name {
+        margin-left: 100px;
+        padding: 7px 15px;
+    }
+}
+
+@media (max-width:991px) {
+    .featured-products .product .prod-name {
+        font-size: 15px;
+        margin-left: 40px;
+        padding: 5px 10px;
+    }
+
+    .featured-products .product div p {
+        font-size: 15px;
+    }
+
+    .featured-products .product div p:first-child {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .featured-products .product .prod-name {
+        margin-left: 150px;
+        font-size: 20px;
+    }
+
+    .featured-products .product div p {
+        font-size: 20px;
+    }
+
+    .featured-products .product div p:first-child {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:575px) {
+    .featured-products .product .prod-name {
+        margin-left: 45%;
+    }
+}
+
+@media (max-width:500px) {
+    .featured-products .product .prod-name {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width:500px) {
+    .featured-products .product .prod-name {
+        margin-left: 37%;
+    }
+}
+
+@media (max-width:420px) {
+    .featured-products .product .prod-name {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width:390px) {
+    .featured-products .product .prod-name {
+        margin-left: 25%;
+    }
+}

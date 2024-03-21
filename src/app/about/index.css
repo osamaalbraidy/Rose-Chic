@@ -1,0 +1,35 @@
+.about{
+    padding: 80px 300px;
+    text-align: center;
+}
+
+.about h1{
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.about p{
+    font-size: 20px;
+}
+
+@media (max-width: 1220px) {
+    .about {
+        padding: 80px 150px;
+    }
+}
+
+@media (max-width: 995px) {
+    .about {
+        padding: 80px 100px;
+    }
+}
+@media (max-width: 790px) {
+    .about{
+        padding: 80px 50px;
+    }
+}
+@media (max-width: 400px) {
+    .about{
+        padding: 80px 10px;
+    }
+}

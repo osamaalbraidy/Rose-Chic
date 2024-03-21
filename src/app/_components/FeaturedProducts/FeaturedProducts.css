@@ -1,0 +1,23 @@
+.featured-products img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-products .title {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.featured-products-container {
+    padding: 60px;
+}
+
