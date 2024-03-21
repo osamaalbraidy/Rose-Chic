@@ -3,7 +3,7 @@ import "./Header.css";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../assets/Header Logo/Header Logo-01.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaSearch, FaShoppingBag, FaUser } from "react-icons/fa";
 import ProductsBagDetail from "../ProductsBagDetail/ProductsBagDetail";
 
@@ -12,6 +12,13 @@ const Header = () => {
     const [isInputOnn, setIsInputOnn] = useState(false);
     const [isMouseOver, setIsMouseOver] = useState(false);
     const [inShoppingBag, setInShoppingBag] = useState(3);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth <= 1000) {
+            setIsMobile(false)
+        } else setIsMobile(true)
+    }, [])
 
     const toggleMenu = () => {
         setIsXShape(!isXShape);
@@ -95,10 +102,10 @@ const Header = () => {
                             <FaShoppingBag />
                             <p>{inShoppingBag}</p>
                         </Link>
-                        <div className={`bag-list ${isMouseOver?"show":""}`} onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut}>
+                        {isMobile ? <div className={`bag-list ${isMouseOver ? "show" : ""}`} onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut}>
                             <h1>In Your Bag</h1>
                             <ProductsBagDetail />
-                        </div>
+                        </div> : <></>}
                     </li>
                     <li>
                         <Link href="">
