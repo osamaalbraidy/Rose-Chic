@@ -62,10 +62,10 @@ const Header = () => {
                             placeholder='Search'
                         />
                     </li>
-                    <li><Link href="/">HOME</Link></li>
-                    <li><Link href="/about">ABOUT</Link></li>
-                    <li><Link href="/shop">SHOP</Link></li>
-                    <li><Link href="/contact">CONTACT</Link></li>
+                    <li><Link href="/" onClick={toggleMenu}>HOME</Link></li>
+                    <li><Link href="/about" onClick={toggleMenu}>ABOUT</Link></li>
+                    <li><Link href="/shop" onClick={toggleMenu}>SHOP</Link></li>
+                    <li><Link href="/contact" onClick={toggleMenu}>CONTACT</Link></li>
                 </ul>
                 <ul className='ShoppingBag'>
                     <li>
