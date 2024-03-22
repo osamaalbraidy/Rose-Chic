@@ -1,4 +1,5 @@
-import FeaturedProducts from '../_components/FeaturedProducts/FeaturedProducts'
+import SampleProducts from '../_components/SampleProducts/SampleProducts'
+import { FeaturedProducts } from '../data/productsData'
 import './index.css'
 
 const page = () => {
@@ -19,7 +20,7 @@ const page = () => {
                     with us seamless and enjoyable. Join us in embracing your individuality
                     and expressing your unique sense of style with Rose Chic.</p>
             </div>
-            <FeaturedProducts />
+            <SampleProducts products={FeaturedProducts} productTitle="Featured" />
         </>
     )
 }
