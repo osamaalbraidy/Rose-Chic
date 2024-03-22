@@ -1,7 +1,7 @@
 .landing-container {
     padding: 60px;
 }
-@media (max-width:767px) {
+@media (max-width:1000px) {
     .landing-container{
         padding: 10px 20px 60px;
     }
