@@ -8,6 +8,25 @@
     position: fixed;
     width: 100%;
     z-index: 999;
+    border-bottom: 1px solid var(--second-color);
+}
+
+@media (max-width:1000px) {
+    .header{
+        height: 130px;
+    }
+    ul li p {
+        margin-top: -5px;
+    }
+}
+
+@media (max-width:600px) {
+    .header{
+        height: 100px;
+    }
+    ul li p {
+        margin-top: -20px;
+    }
 }
 
 .nav {
