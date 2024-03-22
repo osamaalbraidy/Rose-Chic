@@ -5,9 +5,9 @@ import ShopCategorySection from "./_components/ShopCategorySection/ShopCategoryS
 export default function Home() {
   return (
     <>
-    <LandingSection />
-    <ShopCategorySection />
-    <FeaturedProducts />
+      <LandingSection />
+      <ShopCategorySection />
+      <FeaturedProducts />
     </>
   );
 }

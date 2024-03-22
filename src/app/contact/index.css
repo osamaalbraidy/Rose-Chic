@@ -1,5 +1,5 @@
 .contact {
-    padding: 80px 300px 150px;
+    padding: 230px 300px 150px;
 }
 
 @media (max-width: 1220px) {
@@ -41,7 +41,7 @@
 }
 
 .contact button {
-    color: var(--forth-color);
+    color: white;
     background-color: var(--first-color);
     padding: 10px 20px;
     border: 1px solid var(--first-color);
@@ -53,5 +53,5 @@
 
 .contact button:hover {
     color: var(--first-color);
-    background-color: var(--forth-color);
+    background-color: white;
 }

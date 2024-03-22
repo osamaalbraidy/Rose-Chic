@@ -11,37 +11,37 @@ const ShopCategorySection = () => {
     return (
         <>
             <div className="shop-category shop-category-container container">
-                <h1 className="font-weight-light title">Shop Category</h1>
+                <h1 className="font-weight-light title">Shop Categories</h1>
                 <div className="row categories">
                     <ShopCategoryCard
                         imageSrc={tops}
                         categoryName="Tops"
-                        categoryLink=""
+                        categoryLink="/shop/tops"
                     />
                     <ShopCategoryCard
                         imageSrc={pants}
                         categoryName="Pants"
-                        categoryLink=""
+                        categoryLink="/shop/pants"
                     />
                     <ShopCategoryCard
                         imageSrc={sets}
                         categoryName="Sets"
-                        categoryLink=""
+                        categoryLink="/shop/sets"
                     />
                     <ShopCategoryCard
                         imageSrc={dresses}
                         categoryName="Dresses"
-                        categoryLink=""
+                        categoryLink="/shop/dresses"
                     />
                     <ShopCategoryCard
                         imageSrc={shoes}
                         categoryName="Shoes"
-                        categoryLink=""
+                        categoryLink="/shop/shoes"
                     />
                     <ShopCategoryCard
                         imageSrc={bags}
                         categoryName="Bags"
-                        categoryLink=""
+                        categoryLink="/shop/bags"
                     />
                 </div>
             </div>
