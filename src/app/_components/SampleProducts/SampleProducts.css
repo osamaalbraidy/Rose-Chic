@@ -21,4 +21,9 @@
     padding: 60px;
 }
 
+@media (max-width:767px) {
+    .sample-products-container{
+        padding: 60px 20px;
+    }
+}
 

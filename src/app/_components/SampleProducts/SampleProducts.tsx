@@ -1,4 +1,3 @@
-// SampleProducts.tsx
 import './SampleProducts.css';
 import Product from '../Product/Product';
 

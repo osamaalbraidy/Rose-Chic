@@ -9,7 +9,7 @@ interface CategoryProps {
 
 const ShopCategoryCard: React.FC<CategoryProps> = ({ imageSrc, categoryName, categoryLink }) => {
     return (
-        <div className="col-md-4">
+        <div className="col-md-4 col-sm-12">
             <div className="category">
                 <Image src={imageSrc} alt="" className="img-fluid" />
                 <h1 className="font-weight-light"><Link href={categoryLink} className="cat-name">{categoryName}</Link></h1>

@@ -1,6 +1,12 @@
 .shop-category-container {
     padding: 60px;
 }
+@media (max-width:767px) {
+    .shop-category-container{
+        padding: 60px 20px;
+    }
+}
+
 
 .shop-category {
     display: flex;
