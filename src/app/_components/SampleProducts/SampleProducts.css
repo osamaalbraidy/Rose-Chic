@@ -27,3 +27,15 @@
     }
 }
 
+@media (max-width:990px) and (min-width:768px){
+    .sample-products img {
+        height: 250px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px){
+    .sample-products img {
+        height: 350px;
+    }
+}
+
